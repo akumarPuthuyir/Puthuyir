@@ -1,0 +1,12 @@
+.main-header .logo {
+    width:270px;
+    height:58px;
+}
+
+@media (max-width: 767px){
+.main-header .logo, .main-header .navbar {
+    width: 100%;
+    float: none;
+    margin: 0;
+}
+}

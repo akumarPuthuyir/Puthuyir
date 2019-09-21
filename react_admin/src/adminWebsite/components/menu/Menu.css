@@ -1,0 +1,9 @@
+.main-sidebar{
+    width:270px;
+}
+.skin-blue .sidebar-form input[type="text"],.skin-blue .sidebar-form .btn{
+    background-color: white;
+} 
+.main-header .navbar{
+    margin-left: 270px;
+}
