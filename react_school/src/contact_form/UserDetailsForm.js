@@ -31,7 +31,6 @@ class UserDetailsForm extends Component {
     }
     
     submitClicked=()=>{
-        console.log(this.state.identityProof);
         const user={
                 firstName:this.props.user.firstName,
                 lastName:this.state.lastName,
@@ -62,7 +61,6 @@ class UserDetailsForm extends Component {
             this.setState({spinner:true});
             axios.get("https://api.postalpincode.in/pincode/"+target.value)
             .then(res=>{
-                console.log(res);
                 if(res.data[0].Message==="No records found"){
                     window.alert("Please enter valid Pincode or\n Manually enter the address");
                     this.setState({

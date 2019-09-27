@@ -13,6 +13,7 @@ import LoginModal from "react-login-modal-sm";
 import axios from 'axios';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import UserDetailsForm from '../contact_form/UserDetailsForm';
+import RegisterForm from '../components/registerForm/registerForm';
 
 
 class RegistrationPage extends Component {

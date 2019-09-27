@@ -70,8 +70,8 @@ class adminRoleCheck extends Component {
                 </div>
               </div>
               <div className="timeline-footer">
-                <a href="Access_Confirmation_Screen.html" className="btn btn-primary btn-xs">Approve Access</a>&nbsp;
-                <a href="Access_Rejection_Screen.html" className="btn btn-primary btn-xs">Reject Access</a>&nbsp;
+                <Link to="/accessConfirmation" className="btn btn-primary btn-xs">Send for Review</Link>&nbsp;
+                <Link to="/accessRejection" className="btn btn-primary btn-xs">Reject Access</Link>&nbsp;
                 <Link to="/adminAccessReview" className="btn btn-primary btn-xs">Back to User List</Link>
               </div>
             </div>

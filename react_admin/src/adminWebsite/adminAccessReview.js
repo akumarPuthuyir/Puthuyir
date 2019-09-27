@@ -35,8 +35,8 @@ class adminAccessReview extends Component {
             <td>{this.state.users[i].userid}</td>
             <td>{this.state.users[i].firstName}</td>
             <td>{this.state.users[i].createdDate.split("T")[0]}</td>
-            <td><span className="label label-warning">Initial Admin Check</span></td>
-            <td>Beneficiary</td>
+            <td><span className="label label-warning">New User</span></td>
+            <td>{this.state.users[i].role}</td>
             <td>{this.state.users[i].address.locality}</td>
             <td>{this.state.users[i].address.district}</td>
             <td><a href=""><Link to={newTo}>More Details</Link></a></td>
@@ -67,13 +67,12 @@ class adminAccessReview extends Component {
                     <section className="content">
                         {/* Small boxes (Stat box) */}
                         <div className="row" >
-                        <SmallBoxCard content="Approver" linkTo="/approver" colour="bg-aqua"/>
                         {/* ./col */}
                         <SmallBoxCard content="Admin" linkTo="/admin" colour="bg-green"/>
                         {/* ./col */}
-                        <SmallBoxCard content="Volunteer" linkTo="/volunteer" colour="bg-yellow"/>
+                        <SmallBoxCard content="Inbox" linkTo="/volunteer" colour="bg-yellow"/>
                         {/* ./col */}
-                        <SmallBoxCard content="Reviewer" linkTo="/reviewer" colour="bg-red"/>
+                        <SmallBoxCard content="Logout" linkTo="/reviewer" colour="bg-red"/>
                         {/* ./col */}
                         </div>
                         {/* /.row */}
