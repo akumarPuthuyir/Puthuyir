@@ -209,7 +209,7 @@ class registerForm extends Component {
         }
     }
     currentPincode=()=>{
-        if(this.state.pincode.length!=6){
+        if(this.state.pincode!=null && this.state.pincode.length!=6){
             this.setState({pinCode:""});
             document.getElementById("pincode").value="";
         }

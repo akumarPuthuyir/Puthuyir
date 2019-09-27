@@ -40,15 +40,15 @@ class App extends Component {
             <Route path="/adminIndex" component={()=><AdminIndex/>}/>
             <Route path="/adminNewSchoolReview" component={()=><AdminNewSchoolReview/>}/>
             <Route path="/adminAccessReview" component={()=><AdminAccessReview/>}/>
-            <Route path="/adminRoleCheck/:userId" component={(props)=><AdminRoleCheck {...props}/>}/>
+            <Route path="/adminRoleCheck" component={(props)=><AdminRoleCheck {...props}/>}/>
             <Route path="/trustRegister" component={()=><TrustRegister saveUser={(user)=>this.saveUser(user)}/>}/>}/>
             <Route path="/trustLogin" component={()=><TrustLogin/>}/>
             <Route path="/volunteerLogin" component={()=><VolunteerLogin/>}/>
-            <Route path="/volunteerRegister" component={()=><VolunteerRegister saveUser={(user)=>this.saveUser(user)}/>}/>
+            <Route path="/volunteerRegister" component={(props)=><VolunteerRegister saveUser={(user)=>this.saveUser(user)}{...props}/>}/>
             <Route path="/accessRejection" component={()=><AccessRejection/>}/>
             <Route path="/accessConfirmation" component={()=><AccessConfirmation/>}/>
             <Route path="/sponsorMainScreen" component={()=><SponsorMainScreen/>}/>
-            <Route path="/referVolunteer" component={()=><ReferVolunteer/>}/>
+            <Route path="/referVolunteer" history={history} component={()=><ReferVolunteer/>}/>
           </Switch>
         </Router>
       </div>

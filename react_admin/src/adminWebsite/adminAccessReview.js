@@ -28,7 +28,7 @@ class adminAccessReview extends Component {
         var rows=[];
         for(let i=0;i<this.state.users.length;i++){
             const newTo = { 
-                pathname: "/adminRoleCheck/"+this.state.users[i].userid, 
+                pathname: "/adminRoleCheck", 
                 user:this.state.users[i]
             };
         rows.push(<tr>
